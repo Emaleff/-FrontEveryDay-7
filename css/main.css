@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+@font-face {
+  font-family: "KumbhSans";
+  src: url("../fonts/KumbhSans-Regular.ttf");
+}
+@font-face {
+  font-family: "KumbhSansBold";
+  src: url("../fonts/KumbhSans-Bold.ttf");
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+}
+.wrapp {
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  width: 920px;
+  min-height: 509px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  /* overflow: hidden; */
+}
+.img {
+  position: relative;
+  padding-top: 70px;
+  overflow: hidden;
+}
+.img::after {
+  content: url(../img2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapp::before {
+  content: url(../img3.png);
+  position: absolute;
+  left: -92px;
+  z-index: 3;
+  top: 200px;
+}
+.img1 {
+  position: relative;
+  z-index: 2;
+}
+.accordion {
+  width: 50%;
+  padding-top: 65px;
+  box-sizing: border-box;
+  padding-right: 95px;
+}
+.accordion__title {
+  font-family: KumbhSansBold, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1e1f36;
+  margin-bottom: 45px;
+}
+.accordion__content {
+  width: 350px;
+}
+.accordion__item {
+  border-bottom: 1px solid #e8e8ea;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+.accordion__top-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__top-block:hover {
+  cursor: url(../cursor.png) 2 2, pointer;
+}
+.accordion__item-title {
+  font-family: KumbhSans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4b4c5f;
+  max-width: 319px;
+}
+.active .accordion__item-title {
+  font-family: KumbhSansBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #1e1f36;
+}
+.active .accordion__item-text {
+  display: block;
+}
+.active .accordion__arrow {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.accordion__arrow {
+  transition: 0.5s;
+}
+.accordion__item-text {
+  margin-top: 18px;
+  max-width: 319px;
+  font-family: KumbhSans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+  display: none;
+}
+.imgSmallScreen{
+  display: none;
+}
